@@ -1,0 +1,58 @@
+/* RocketJourney Web UIKit v0.1*/
+
+/* 1. Badge */
+.rjkit-badge-container {
+	margin: 0 auto;
+	padding: 10px;
+	display:inline-block;
+}
+.rjkit-badge-halo-holder {
+	background-size: contain;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.rjkit-badge-halo-3 {
+	background-image: url("res/halo-3.svg");
+}
+
+.rjkit-badge-halo-holder:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.rjkit-badge-user {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin:12%;
+	background-size: cover;
+	border-radius: 50%;
+
+}
+
+.rjkit-badge-streak {
+	position: relative;
+	width:24%;
+	bottom:0;
+	top: -7%;
+	margin: 0 auto;
+	font-weight: bolder;
+	color:white;
+	font-size: calc(16px + 6vw);
+	text-align: center;
+}
+
+.rjkit-badge-streak-x {
+	background: url("res/x.svg") no-repeat;
+	background-size: contain;
+}
+
+.rjkit-badge-streak:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
