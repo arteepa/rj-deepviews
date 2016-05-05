@@ -108,6 +108,7 @@ body {
 .teammates {
 	text-align:center;
 	margin: 15px auto;
+	vertical-align: top;
 }
 
 .single {
@@ -135,4 +136,17 @@ body {
 	color: #fff;
 	font-size: calc(14px + 1vw);
 	font-weight: 300;
+}
+
+.weeks-label {
+	opacity: 0.5;
+	font-size: 10px;
+	color: #FFFFFF;
+	letter-spacing: 1.47px;
+	font-weight: bolder;
+}
+
+.and-more {
+	color: #909090;
+	font-weight: bolder;
 }

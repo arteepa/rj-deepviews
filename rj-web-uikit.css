@@ -1,6 +1,22 @@
 /* RocketJourney Web UIKit v0.1*/
 
 /* 1. Badge */
+
+/*      Week Streak Halo Manipulation */
+
+.rjkit-badge-halo-x { background-image: url("res/halo-x.svg"); }
+.rjkit-badge-halo-0 { background-image: url("res/halo-0.svg"); }
+.rjkit-badge-halo-1 { background-image: url("res/halo-1.svg"); }
+.rjkit-badge-halo-2 { background-image: url("res/halo-2.svg"); }
+.rjkit-badge-halo-3 { background-image: url("res/halo-3.svg"); }
+.rjkit-badge-halo-4 { background-image: url("res/halo-4.svg"); }
+.rjkit-badge-halo-5 { background-image: url("res/halo-5.svg"); }
+.rjkit-badge-halo-6 { background-image: url("res/halo-6.svg"); }
+.rjkit-badge-halo-7 { background-image: url("res/halo-7.svg"); }
+.rjkit-badge-streak-x {	background: url("res/x.svg") no-repeat center center; width: 20%;	-webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; color:rgba(255,255,255,0)!important;}
+.rjkit-badge-streak-number { font-size: calc(36px + 2vw); margin-top: -8% !important; }
+.rjkit-badge-streak-number-teammate { font-size: calc(16px + 2vw); margin-top: -8%!important;}
+
 .rjkit-badge-container {
 	margin: 0 auto;
 	padding: 10px;
@@ -12,14 +28,10 @@
 	background-repeat: no-repeat;
 }
 
-.rjkit-badge-halo-3 {
-	background-image: url("res/halo-3.svg");
-}
-
 .rjkit-badge-halo-holder:before{
 	content: "";
 	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
+	padding-top: 100%;
 }
 
 .rjkit-badge-user {
@@ -36,23 +48,8 @@
 
 .rjkit-badge-streak {
 	position: relative;
-	width:24%;
-	bottom:0;
-	top: -7%;
 	margin: 0 auto;
 	font-weight: bolder;
-	color:white;
-	font-size: calc(16px + 6vw);
+	color:#fff;
 	text-align: center;
-}
-
-.rjkit-badge-streak-x {
-	background: url("res/x.svg") no-repeat;
-	background-size: contain;
-}
-
-.rjkit-badge-streak:before{
-	content: "";
-	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
 }
