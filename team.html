@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,57 +11,67 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/rj-uikit.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/rj-web-uikit.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,700,700italic' rel='stylesheet' type='text/css'>
-    <script src="modernizr-2.8.3.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-
-
-            <div class="team">
-                <div class="team-name">Cereal Killers</div>
-                <div class="team-sub">TEAM</div>
-            </div>
-
-            <div class="teammates">
-
-                <div class="rjkit-badge-container" style="width:24%;">
-                    <div class="rjkit-badge-halo-holder rjkit-badge-halo-5">
-                        <div class="rjkit-badge-user" style="background-image: url('css/res/user-photo.png')"></div>
+            <div class="container full-screen flex text-center">
+                <div class="col-xs-12 col-md-6">
+                    <div>
+                        <div class="team-name">Cereal Killers</div>
+                        <div class="team-sub">TEAM</div>
+                        <div class="teammates">
+                            <div class="rj-badge-container">
+                                <div class="rj-badge-halo-holder rj-badge-halo-5">
+                                    <div class="rj-badge-user" style="background-image: url('css/rj-uikit/user-photo.png')"></div>
+                                </div>
+                                <div class="rj-badge-streak rj-badge-streak-number-teammate">12</div>
+                            </div>
+                            <div class="rj-badge-container">
+                                <div class="rj-badge-halo-holder rj-badge-halo-2">
+                                    <div class="rj-badge-user" style="background-image: url('css/rj-uikit/user-photo.png')"></div>
+                                </div>
+                                <div class="rj-badge-streak rj-badge-streak-number-teammate">4</div>
+                            </div>
+                            <div class="rj-badge-container">
+                                <div class="rj-badge-halo-holder rj-badge-halo-x">
+                                    <div class="rj-badge-user" style="background-image: url('css/rj-uikit/user-photo.png')"></div>
+                                </div>
+                                <div class="rj-badge-streak rj-badge-streak-x rj-badge-streak-number-teammate">2</div>
+                            </div>
+                            <div class="and-more">+ 3 more</div>
+                            <div class="invite-notif text-left">
+                                <div class="user-photo" style="background-image: url('css/rj-uikit/user-photo.png')"></div>
+                                <div class="notif-text"><b>Ernesto Cambuston</b> invited you to join this team</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rjkit-badge-streak rjkit-badge-streak-number-teammate">12</div>
                 </div>
-
-                <div class="rjkit-badge-container" style="width:24%;">
-                    <div class="rjkit-badge-halo-holder rjkit-badge-halo-2">
-                        <div class="rjkit-badge-user" style="background-image: url('css/res/user-photo.png')"></div>
+                <div class="col-xs-12 col-md-6 separator">
+                    <div class="info-container">
+                        <div class="rj-logo"></div>
+                        <div class="rj-oneliner">A little friendly competition to stay motivated on your exercise goals</div>
+                        <div class="sms-module hidden-xs">
+                            <div class="sms-copy">Receive SMS to download the app</div>
+                            <div class="sms-input">
+                                <input type="tel" id="phone" class="form-control">
+                            <input data-id="d292ebd9-1fb9-479c-96c8-c96720c2820b" data-msg="Bájate esta: {{ link }}"id="submit" class="btn btn-default sms-button" type="submit" value="Send me the App">
+                            </div>
+                        </div>
                     </div>
-                    <div class="rjkit-badge-streak rjkit-badge-streak-number-teammate">4</div>
                 </div>
-
-                <div class="rjkit-badge-container" style="width:24%;">
-                    <div class="rjkit-badge-halo-holder rjkit-badge-halo-x">
-                        <div class="rjkit-badge-user" style="background-image: url('css/res/user-photo.png')"></div>
-                    </div>
-                    <div class="rjkit-badge-streak rjkit-badge-streak-x rjkit-badge-streak-number-teammate">2</div>
-                </div>
-                <div class="and-more">+ 3 more</div>
             </div>
 
-            <div class="about-rj">
-                <div class="rj-logo"></div>
-                <div class="rj-oneliner">A little friendly competition to stay motivated on your exercise goals</div>
-            </div>
-
-            <div class="invite-notif">
-                <div class="user-photo" style="background-image: url('css/res/user-photo.png')"></div>
-                <div class="notif-text"><b>Ernesto Cambuston</b> invited you to join this team</div>
-            </div>
-
-            <div class="get-button"> Get the App</div>
+            <div class="get-button visible-xs-block">Get the App</div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="js/intlTelInput.min.js"></script>
+            <script src="js/utils.js"></script>
+            <script src="js/sms.js"></script>
         </body>
         </html>

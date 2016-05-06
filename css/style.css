@@ -14,6 +14,68 @@ body {
 	font-family: 'Lato', sans-serif;
 	background: none;
 }
+
+.full-screen {
+	height:100vh;
+}
+
+.invite-notif {
+	width: 100%;
+	height:85px;
+	background-color: #1a1a1a;
+	color:#fff;
+}
+
+@media (min-width: 768px) {
+	.flex {
+		display: flex;
+		align-items: center; 
+	}
+	.teammates {
+		width:70%;
+	}
+	.invite-notif {
+		border-radius: 6px;
+		border: 1px solid #181818;
+		margin-top: 30px;
+	}
+	.rj-badge-container {
+		width:25%;
+	}
+	.separator {
+		border-left: 1px solid #363636;
+	}
+	.info-container {
+		margin: 0 20%;
+	}
+	.rj-badge-streak-number-teammate {
+		font-size: 26px;
+		margin-top: -8%!important;
+	}
+}
+
+@media (max-width: 767px) {
+	.invite-notif {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+	}
+	.full-screen {
+		margin-top: 100px;
+	}
+	.rj-badge-container {
+		width:30%;
+	}
+	.info-container {
+		border-top: 1px solid #363636;
+		width:90%;
+		margin: 0 auto;
+		padding-top: 20px;
+		margin-top: 10px;
+	}
+}
+
 .get-button {
 	background-color: #ffcc00;
 	position: fixed;
@@ -40,6 +102,7 @@ body {
 	z-index: 999;
 }
 
+
 .invite {
 	color: #fff;
 	text-align: center;
@@ -56,13 +119,6 @@ body {
 .invite-text {
 	font-size: calc(14px + 1vw);
 	font-weight: 300;
-}
-
-.invite-notif {
-	height:85px;
-	background-color: #1a1a1a;
-	color:#fff;
-	margin-bottom: 20px;
 }
 
 .user-photo {
@@ -84,17 +140,11 @@ body {
 	margin: 15px 0;
 }
 
-.team {
-	width: 80vw;
-	margin: 0 auto;
-	text-align: center;
-}
-
 .team-name {
 	color: #fff;
 	font-weight: 700;
 	font-style: italic;
-	font-size: calc(16px + 3vw);
+	font-size: 28px;
 	letter-spacing: 0.02em;
 }
 
@@ -116,16 +166,8 @@ body {
 	margin: 10px auto;
 }
 
-
-.about-rj{
-	border-top: 1px solid #444;
-	width: 80vw;
-	margin: 0 auto;
-	padding:30px 0 20px 0;
-}
-
 .rj-logo {
-	height:7vw;
+	height:32px;
 	background: url('../img/rj-logo.png') no-repeat center center;
 	background-size: contain;
 	margin-bottom: 20px;
@@ -134,8 +176,9 @@ body {
 .rj-oneliner {
 	text-align: center;
 	color: #fff;
-	font-size: calc(14px + 1vw);
+	font-size: 18px;
 	font-weight: 300;
+	margin-bottom: 20px;
 }
 
 .weeks-label {
@@ -149,4 +192,35 @@ body {
 .and-more {
 	color: #909090;
 	font-weight: bolder;
+}
+
+/* SMS the App */
+
+.iti-flag {background-image: url("../img/flags.png");}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+	.iti-flag {
+		background-image: url("../img/flags@2x.png");
+	}
+}
+
+.sms-copy {
+	margin-bottom: 10px;
+	color: #888;
+}
+.sms-input {
+	
+}
+
+.sms-input .form-control {
+	height:40px;
+	width:220px;
+}
+
+.sms-button {
+	background-color: #ffcc00;
+	border: none;
+	font-weight: bolder;
+	height: 40px;
+	margin-top:10px;
 }
